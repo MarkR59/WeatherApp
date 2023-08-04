@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+    color: white;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+    background: url('./Sky.jpg');
+    background-position: center;  
+    background-size: auto; 
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+    padding: 50px;
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    color: white;
+    background-color: rgb(60, 133, 205, 0.2);
+    display: flex;
+}
+
+.spacer{
+    flex-grow: 1;
+}
+
+.search-box > input{
+    padding: 15px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.6em;
+    color: #333;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+}
+
+.whole{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    gap: 40px;
+    flex: 1;
+}
+
+.left_panel{
+    background-color: rgb(60, 133, 205, 0.2);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 30px;
+}
+
+.left_panel > p{
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 2em;
+    
+}
+
+.right{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 20px;
+}
+
+.location{
+    font-size: 2em;
+    padding: 20px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.nodes > div {
+    width: 15rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-radius: 15%;
+    font-size: 3em;
+}
+
+.nodes{
+    display: flex;
+    gap: 3rem;
+    flex: 1;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.toggleUnit{
+    border-radius: 15%;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all .3s ease-out;
+}
+
+.cloudy{
+    background: url('./Cloudy.jpg');
+}
+
+.sunny{
+    background: url('./Sunny.jpg');
+}
+
+.partCloudy{
+    background: url('./SunnyxCloud.jpg');
+    background-position: center;     
+}
